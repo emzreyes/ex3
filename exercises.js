@@ -48,18 +48,22 @@ export function everyLoop(array, test) {
     }
     return curResult
 }
+console.log("task 3-3")
+//console.log("should be true")
+console.log(everyLoop([1, 3, 5], n => n < 10));
+//console.log("should be false")
+console.log(everyLoop([2, 4, 16], n => n < 10));
+//console.log("should be true")
+console.log(everyLoop([], n => n < 10));
 
 export function everySome(array, test) {
    return !array.some((value) => !test(value))
 
 }
-console.log("tasks 3-3 and 3-4")
+console.log("task 3-4")
 //console.log("should be true")
 console.log(everySome([1, 3, 5], n => n < 10));
-// → true
 //console.log("should be false")
 console.log(everySome([2, 4, 16], n => n < 10));
-// → false
 //console.log("should be true")
 console.log(everySome([], n => n < 10));
-// → true

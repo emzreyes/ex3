@@ -5,4 +5,4 @@ let quotes = [
 ]
 
 // get an integer between 0 and 2 so that it will be a different quote each time
-console.log(quotes[Math.floor(Math.random()*3)])
+console.log(quotes[Math.floor(Math.random()*3)]) 
